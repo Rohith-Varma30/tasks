@@ -1,0 +1,171 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 420px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+h1 {
+    text-align: center;
+    color: hotpink;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.title-container .line {
+  flex: 1;
+  height: 1px;
+  background-color: #e2e2e2;
+}
+
+.title-container h1 {
+  color: #f72a77;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.offer-box {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.offer-box input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.box-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-content p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.tag {
+    background: #ff6584;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.price span {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+.price del {
+    color: #bbb;
+    font-size: 13px;
+    display: block;
+}
+
+.popular {
+    border: 2px solid hotpink;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: hotpink;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+.selectors {
+    margin-top: 10px;
+}
+
+.selectors div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.selectors span {
+    width: 20px;
+}
+
+select {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.delivery {
+    color: hotpink;
+}
+
+.add-to-cart {
+    width: 100%;
+    background: hotpink;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.powered {
+    font-size: 12px;
+    text-align: center;
+    color: #aaa;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .box-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .selectors {
+        width: 100%;
+    }
+}
